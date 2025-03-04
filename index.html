@@ -230,7 +230,7 @@
                         <div class="text-bg">
                            <h1> <span class="blu">PLANES<br></span>De Previsión</h1>
                            <!-- <figure><img src="images/banner_img.png" alt="#"/></figure> -->
-                           <a class="read_more" href="#">INFORMACIÓN</a>
+                           <a class="read_more" href="servicios/planes.html">INFORMACIÓN</a>
                         </div>
                      </div>
                   </div>
@@ -301,10 +301,10 @@
                </div>
                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
                   <div class="glasses_box">
-                     <figure><img src="images/gps.png" alt="#"/></figure>
-                     <h3><span class="blu">TRASLADOS</span></h3>
-                     <p>ㅤㅤㅤ</p>
-                     <a class="read_more" href="#">INFORMACIÓN</a>
+                     <figure><img src="images/uya.png" alt="#"/></figure>
+                     <h3><span class="blu">ATAÚDES Y</span></h3>
+                     <p>URNAS</p>
+                     <a class="read_more" href="servicios/ataudes-urnas.html">INFORMACIÓN</a>
                   </div>
                </div>
                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
@@ -320,7 +320,7 @@
                      <figure><img src="images/otross.png" alt="#"/></figure>
                      <h3><span class="blu">OTROS SERVICIOS</span></h3>
                      <p>ㅤㅤㅤ</p>
-                     <a class="read_more" href="servicios.html">INFORMACIÓN</a>
+                     <a class="read_more" href="servicios.html">VER</a>
                   </div>
                </div>
                
@@ -506,42 +506,68 @@
          </div>
       </div>
       <!-- end clients section -->
-      <br><br>
-      <!-- contact section -->
-   
-         <div class="container-fluid" style="text-align:center;">
-            <div class="map_section">
-               <div id="map">
-                  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15056.029799196009!2d-99.2453128!3d19.3688301!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d201ee1b11f501%3A0x88d6cc0c41f8e3c0!2sAgencia%20Funeraria%20Palma!5e0!3m2!1ses-419!2smx!4v1689406234449!5m2!1ses-419!2smx" width="90%" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-               </div>
-               </div>
+      <br>
+
+   <!-- contact section -->
+
+
+      <section class="map-container">
+         <div class="map-frame">
+            <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15056.029799196009!2d-99.2453128!3d19.3688301!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d201ee1b11f501%3A0x88d6cc0c41f8e3c0!2sAgencia%20Funeraria%20Palma!5e0!3m2!1ses-419!2smx!4v1689406234449!5m2!1ses-419!2smx"
+            allowfullscreen="" loading="lazy"></iframe>
          </div>
-      <!-- end contact section -->
+      </section>
+
+            <style>
+                .map-container {
+                  text-align: center;
+                    padding: 50px 20px;
+                }
+
+               .map-container h2 {
+                  font-size: 24px;
+                  color: #333;
+                  margin-bottom: 20px;
+                }
+
+                .map-frame {
+                  width: 100%;
+                  max-width: 800px;
+                  margin: 0 auto;
+                  border-radius: 10px;
+                  overflow: hidden;
+                  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                }
+
+              .map-frame iframe {
+                  width: 100%;
+                    height: 400px;
+                    border: none;
+                }
+            </style>
       <!--  footer -->
+      <section>
+            <footer>
+               <style>
+                 footer {
+                  background-color: #282c34;
+                  color: white;
+                   padding: 20px 10px;
+                  }
+                  h3{
 
-      <!-- Footer -->
-<section>
-  <footer>
-    <style>
-      /* Estilos específicos para el footer */
-      footer {
-        background-color: #282c34;
-        color: white;
-        padding: 20px 10px;
-      }
-      h3{
+                     color: white;
+                  }
 
-         color: white;
-      }
-
-      .footer-container {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        align-items: flex-start;
-        max-width: 1200px;
-        margin: 0 auto;
-      }
+                  .footer-container {
+                  display: flex;
+                   flex-wrap: wrap;
+                   justify-content: space-between;
+                   align-items: flex-start;
+                   max-width: 1200px;
+                   margin: 0 auto;
+                  }
 
       .footer-container div {
         flex: 1 1 30%;
@@ -637,7 +663,7 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <p>&copy; 2024 Palma. Todos los derechos reservados.</p>
+      <p>&copy; 2024 Agencia Funeraria Palma. <br> "Hacemos Sencillos tus Momentos Dificiles." <br>Todos los derechos reservados.</p>
     </div>
     <script>
       // Botón "Volver al inicio"
@@ -663,4 +689,3 @@
       <script src="js/custom.js"></script> 
    </body>
 </html>
-
