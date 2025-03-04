@@ -174,54 +174,190 @@
          </div>
       </section>   
 
-      <!-- contact section -->
-   
-         <div class="container-fluid" style="text-align:center;">
-            <div class="map_section">
-               <div id="map">
-                  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15056.029799196009!2d-99.2453128!3d19.3688301!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d201ee1b11f501%3A0x88d6cc0c41f8e3c0!2sAgencia%20Funeraria%20Palma!5e0!3m2!1ses-419!2smx!4v1689406234449!5m2!1ses-419!2smx" width="90%" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-               </div>
-            </div>
+   <!-- contact section -->
+
+
+      <section class="map-container">
+         <div class="map-frame">
+            <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15056.029799196009!2d-99.2453128!3d19.3688301!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d201ee1b11f501%3A0x88d6cc0c41f8e3c0!2sAgencia%20Funeraria%20Palma!5e0!3m2!1ses-419!2smx!4v1689406234449!5m2!1ses-419!2smx"
+            allowfullscreen="" loading="lazy"></iframe>
          </div>
-      </div>
-      </div>
-      <!-- end contact section -->
-      <!--  footer -->
+      </section>
+         <style>
+            .map-container {
+               text-align: center;
+               padding: 50px 20px;
+               }
+
+            .map-container h2 {
+               font-size: 24px;
+               color: #333;
+               margin-bottom: 20px;
+               }
+
+            .map-frame {
+               width: 100%;
+               max-width: 800px;
+               margin: 0 auto;
+               border-radius: 10px;
+               overflow: hidden;
+               box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+               }
+
+            .map-frame iframe {
+               width: 100%;
+               height: 400px;
+               border: none;
+                
+               }
+         </style>
+   <section>
       <footer>
-         <div class="footer">
-            <div class="container">
-               <div class="row">
-                  <div class="col-md-8 offset-md-2">
-                     <ul class="location_icon">
-                        <li><a href="https://goo.gl/maps/jYeskMR4FhQrmPir5"><i class="fa fa-map-marker" aria-hidden="true"></i></a><br> Privada de Sacramento #12 Mz B , Lt 2, <br>Corpus Christi, 01530, CDMX</li>
-                        <br><br>
-                        <li><a href="#"><i class="fa fa-phone" aria-hidden="true"></i></a><p style="width:100%;"><br>55 32 77 9944 <br>55 2659 9679 </p></li>
-                        <br><br>
-                        <li><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a><br> contacto@funerariapalma.com</li>
-                     </ul>
-                  </div>
-               </div>
-            </div>
-            <div class="copyright">
-               <div class="container">
-                  <div class="row">
-                     <div class="col-md-12">
-                        <p>© 2023 Palma All Rights Reserved</p>
-                     </div>
-                  </div>
-               </div>
-            </div>
+         <style>
+            footer {
+               background-color: #282c34;
+               color: white;
+               padding: 20px 10px;
+               }
+            h3{
+
+               color: white;
+               }
+
+            .footer-container {
+               display: flex;
+               flex-wrap: wrap;
+               justify-content: space-between;
+               align-items: flex-start;
+               max-width: 1200px;
+               margin: 0 auto;
+               }
+
+            .footer-container div {
+               flex: 1 1 30%;
+               margin: 10px;
+               }
+
+            .footer-container h3 {
+               border-bottom: 2px solid #14549c;
+               padding-bottom: 5px;
+               margin-bottom: 10px;
+               }
+
+            .footer-container p, .footer-container a {
+               margin: 5px 0;
+               color: #ddd;
+               text-decoration: none;
+               }
+
+            .footer-container a:hover {
+               text-decoration: underline;
+               color: #14549c;
+               }
+
+            .social-icons {
+               display: flex;
+               gap: 15px;
+               }
+
+               .icon {
+                  width: 40px;
+                  height: 40px;
+                  display: inline-block;
+                  background-size: contain;
+                  background-repeat: no-repeat;
+                  transition: transform 0.3s ease;
+               }
+
+               .icon:hover {
+                  transform: scale(1.2);
+               }
+
+               .icon.facebook {
+                  background-image: url('https://img.icons8.com/ios-filled/50/ffffff/facebook--v1.png');
+               }
+
+               .icon.twitter {
+                  background-image: url('https://img.icons8.com/ios-filled/50/ffffff/twitter.png');
+               }
+
+               .icon.instagram {
+                  background-image: url('https://img.icons8.com/ios-filled/50/ffffff/instagram.png');
+               }
+
+               .back-to-top button {
+                  background-color: #14549c;
+                  color: white;
+                  padding: 10px 20px;
+                  border: none;
+                  cursor: pointer;
+                  border-radius: 5px;
+                  font-size: 14px;
+                  transition: background-color 0.3s ease;
+               }
+
+               .back-to-top button:hover {
+                  background-color: #14499c;
+               }
+
+               .footer-bottom {
+                  text-align: center;
+                  margin-top: 20px;
+                  font-size: 14px;
+                  color: #aaa;
+               }
+         </style>
+      <div class="footer-container">
+         <div class="contact-info">
+            <h3 style="text-decoration-color: #ffff;">Contacto</h3>
+               <p><strong>Dirección:</strong> Privada de Sacramento #12 Mz B, Lt 2, Corpus Christi, 01530, CDMX</p>
+               <p><strong>Teléfono:</strong> <a href="tel:+525532779944">+52 55 32 77 9944</a> <!-- <br> <a href="tel:+525526599679">+52 55 2659 9679</a>--></p>
+               <p><strong>Email:</strong> <a href="mailto:contacto@empresa.com">contacto@empresa.com</a></p>
          </div>
+         <div class="contact-info">
+            <h3 style="text-decoration-color: #ffff;">Más</h3>
+               <p><a href="">Terminos y Condiciones</a></p>
+               <p><a href="">Para empresas</a></p>
+               <p><a href=""></a></p>
+         </div>
+         <div class="social-media">
+            <h3>Síguenos</h3>
+               <div class="social-icons">
+                  <a target="_blank" href="https://www.facebook.com/profile.php?id=100086533705552" class="icon facebook" title="Facebook"></a>
+                  <!-- <a target="_blank" href="#" class="icon twitter" title="Twitter"></a> -->
+                  <a target="_blank" href="https://www.instagram.com/luispalma84" class="icon instagram" title="instagram"></a>
+               </div>
+         </div>
+         <div class="back-to-top">
+            <button id="backToTop">Volver al inicio</button>
+         </div>
+      </div>
+    <div  class="footer-bottom">
+      <p>Hacemos Sencillos tus Momentos Dificiles. <br> &copy; 2025 Agencia Funeraria Palma. | Todos los derechos reservados.</p>
+    </div>
+      <script>
+      // Botón "Volver al inicio"
+      const backToTopButton = document.getElementById('backToTop');
+
+      backToTopButton.addEventListener('click', () => {
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth'
+        });
+      });
+      </script>
       </footer>
+   </section>
       <!-- end footer -->
+
       <!-- Javascript files-->
-      <script src="../js/jquery.min.js"></script>
-      <script src="../js/popper.min.js"></script>
-      <script src="../js/bootstrap.bundle.min.js"></script>
-      <script src="../js/jquery-3.0.0.min.js"></script>
+      <script src="js/jquery.min.js"></script>
+      <script src="js/popper.min.js"></script>
+      <script src="js/bootstrap.bundle.min.js"></script>
+      <script src="js/jquery-3.0.0.min.js"></script>
       <!-- sidebar -->
-      <script src="../js/jquery.mCustomScrollbar.concat.min.js"></script>
-      <script src="../js/custom.js"></script> 
+      <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+      <script src="js/custom.js"></script> 
    </body>
 </html>
-
